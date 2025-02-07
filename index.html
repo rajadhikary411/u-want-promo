@@ -3,144 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Upromo.com</title>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <title>Footer Design</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
             margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
+            font-family: Arial, sans-serif;
+            background-color: #0d1b1e;
+            color: #fff;
         }
+
         .footer {
-            background-color: #f0f0f0;
-            padding: 20px 10%;
+            padding: 40px 20px;
+            background-color: #0d1b1e;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
         }
+
+        .footer-logo {
+            text-align: center;
+            grid-column: span 5;
+        }
+
+        .footer-logo img {
+            max-width: 150px;
+        }
+
+        .footer-logo p {
+            margin: 10px 0 0;
+        }
+
         .footer h3 {
             font-size: 18px;
-            margin-bottom: 15px;
-            color: #333;
+            margin-bottom: 10px;
+            text-transform: uppercase;
         }
+
         .footer ul {
-            list-style-type: none;
+            list-style: none;
             padding: 0;
         }
+
         .footer ul li {
-            margin-bottom: 8px;
+            margin: 8px 0;
         }
+
         .footer ul li a {
+            color: #cdd1d2;
             text-decoration: none;
-            color: #666;
             transition: color 0.3s ease;
         }
+
         .footer ul li a:hover {
-            color: #2563eb;
+            color: #1e90ff;
         }
-        .footer .social-icons {
+
+        .social-icons {
             margin-top: 20px;
-            text-align: center;
-        }
-        .footer .social-icons ul {
-            display: inline-flex;
+            display: flex;
+            justify-content: center;
             gap: 15px;
-            padding: 0;
+            margin-bottom: 30px;
         }
-        .footer .social-icons ul li a {
-            font-size: 20px;
-            color: #666;
-            transition: color 0.3s ease;
+
+        .social-icons a {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            line-height: 40px;
+            background-color: #1b2b2d;
+            color: #cdd1d2;
+            text-align: center;
+            border-radius: 50%;
+            font-size: 18px;
+            transition: background-color 0.3s ease, color 0.3s ease;
         }
-        .footer .social-icons ul li a:hover {
-            color: #2563eb;
+
+        .social-icons a:hover {
+            background-color: #1e90ff;
+            color: #fff;
         }
-        .flex{
-          display: flex;
-          justify-content: space-between;
-        }
+
+        /* Responsive Design */
         @media (max-width: 768px) {
-            .flex{
-                display: grid;
-                grid-template-columns: repeat(2,1fr);
-            }
             .footer {
-                padding: 20px 5%;
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .footer-logo {
+                grid-column: span 2;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-logo {
+                grid-column: span 1;
             }
         }
     </style>
 </head>
 <body>
     <footer class="footer">
-        <div class="footer-sections flex">
-            <!-- Get Support -->
-            <div>
-                <h3>Get support</h3>
-                <ul>
-                    <li><a href="#">Help Center</a></li>
-                    <li><a href="#">Live chat</a></li>
-                    <li><a href="#">Check order status</a></li>
-                    <li><a href="#">Refunds</a></li>
-                    <li><a href="#">Report abuse</a></li>
-                </ul>
-            </div>
-
-            <!-- Trade Assurance -->
-            <div>
-                <h3>Trade Assurance</h3>
-                <ul>
-                    <li><a href="#">Safe and easy payments</a></li>
-                    <li><a href="#">Money-back policy</a></li>
-                    <li><a href="#">On-time shipping</a></li>
-                    <li><a href="#">After-sales protections</a></li>
-                    <li><a href="#">Product monitoring services</a></li>
-                </ul>
-            </div>
-
-            <!-- Source on Alibaba.com -->
-            <div>
-                <h3>Source on Alibaba.com</h3>
-                <ul>
-                    <li><a href="#">Request for Quotation</a></li>
-                    <li><a href="#">Membership program</a></li>
-                    <li><a href="#">Alibaba.com Logistics</a></li>
-                    <li><a href="#">Sales tax and VAT</a></li>
-                    <li><a href="#">Alibaba.com Reads</a></li>
-                </ul>
-            </div>
-
-            <!-- Sell on Alibaba.com -->
-            <div>
-                <h3>Sell on Alibaba.com</h3>
-                <ul>
-                    <li><a href="#">Start selling</a></li>
-                    <li><a href="#">Seller Central</a></li>
-                    <li><a href="#">Become a Verified Supplier</a></li>
-                    <li><a href="#">Partnerships</a></li>
-                    <li><a href="#">Download the app for suppliers</a></li>
-                </ul>
-            </div>
-
-            <!-- Get to Know Us -->
-            <div>
-                <h3>Get to know us</h3>
-                <ul>
-                    <li><a href="#">About Alibaba.com</a></li>
-                    <li><a href="#">Corporate responsibility</a></li>
-                    <li><a href="#">News center</a></li>
-                    <li><a href="#">Careers</a></li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- Social Icons -->
-        <div class="social-icons">
+        <!-- Get Support Section -->
+        <div>
+            <h3>Get Support</h3>
             <ul>
-                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Live Chat</a></li>
+                <li><a href="#">Check Order Status</a></li>
+                <li><a href="#">Refunds</a></li>
+                <li><a href="#">Report Abuse</a></li>
             </ul>
         </div>
+
+        <!-- Trade Assurance Section -->
+        <div>
+            <h3>Trade Assurance</h3>
+            <ul>
+                <li><a href="#">Safe and Easy Payments</a></li>
+                <li><a href="#">Money-Back Policy</a></li>
+                <li><a href="#">On-Time Shipping</a></li>
+                <li><a href="#">After-Sales Protections</a></li>
+                <li><a href="#">Product Monitoring Services</a></li>
+            </ul>
+        </div>
+
+        <!-- Company Section -->
+        <div>
+            <h3>Company</h3>
+            <ul>
+                <li><a href="https://uwantpromo.com/">Home</a></li>
+                <li><a href="https://uwantpromo.com/about/">About</a></li>
+                <li><a href="https://uwantpromo.com/contact/">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Product Section -->
+        <div>
+            <h3>Product</h3>
+            <ul>
+                <li><a href="https://uwantpromo.com/product-category/ready-to-ship/">Ready To Ship</a></li>
+                <li><a href="https://uwantpromo.com/product-category/silicone-wristbands/">Silicone Wristbands</a></li>
+                <li><a href="https://uwantpromo.com/product-category/lanyards/">Lanyards</a></li>
+                <li><a href="https://uwantpromo.com/product-category/silicone-phone-wallet/">Silicone Phone Wallet</a></li>
+                <li><a href="https://uwantpromo.com/neoprene/">Can Coolers</a></li>
+                <li><a href="https://uwantpromo.com/product-category/custom-sticker/">Custom Sticker</a></li>
+                <li><a href="https://uwantpromo.com/product-category/embroidery-woven-patches/">Embroidery Patches</a></li>
+            </ul>
+        </div>
+
+        <!-- Connect Section -->
+        <div>
+            <h3>Connect</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.youtube.com" target="_blank"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com" target="_blank"><i class="fab fa-linkedin"></i></a>
+            </div>
+            
+            <div class="footer-logo">
+                <img src="logo.png" alt="Logo">
+                <p>Do the Promotional Gifts You Want!</p>
+            </div>
+        </div>
+
+        <!-- Logo Section -->
+
     </footer>
+
+    <!-- Font Awesome CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"></script>
 </body>
 </html>
