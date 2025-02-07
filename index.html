@@ -4,10 +4,139 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Upromo.com</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+        .footer {
+            background-color: #f0f0f0;
+            padding: 20px 10%;
+        }
+        .footer h3 {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        .footer ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .footer ul li {
+            margin-bottom: 8px;
+        }
+        .footer ul li a {
+            text-decoration: none;
+            color: #666;
+            transition: color 0.3s ease;
+        }
+        .footer ul li a:hover {
+            color: #2563eb;
+        }
+        .footer .social-icons {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .footer .social-icons ul {
+            display: inline-flex;
+            gap: 15px;
+            padding: 0;
+        }
+        .footer .social-icons ul li a {
+            font-size: 20px;
+            color: #666;
+            transition: color 0.3s ease;
+        }
+        .footer .social-icons ul li a:hover {
+            color: #2563eb;
+        }
+        .flex{
+          display: flex;
+          justify-content: space-between;
+        }
+        @media (max-width: 768px) {
+            .footer {
+                padding: 20px 5%;
+            }
+        }
+    </style>
 </head>
 <body>
-    <footer>
-        
+    <footer class="footer">
+        <div class="footer-sections flex">
+            <!-- Get Support -->
+            <div>
+                <h3>Get support</h3>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">Live chat</a></li>
+                    <li><a href="#">Check order status</a></li>
+                    <li><a href="#">Refunds</a></li>
+                    <li><a href="#">Report abuse</a></li>
+                </ul>
+            </div>
+
+            <!-- Trade Assurance -->
+            <div>
+                <h3>Trade Assurance</h3>
+                <ul>
+                    <li><a href="#">Safe and easy payments</a></li>
+                    <li><a href="#">Money-back policy</a></li>
+                    <li><a href="#">On-time shipping</a></li>
+                    <li><a href="#">After-sales protections</a></li>
+                    <li><a href="#">Product monitoring services</a></li>
+                </ul>
+            </div>
+
+            <!-- Source on Alibaba.com -->
+            <div>
+                <h3>Source on Alibaba.com</h3>
+                <ul>
+                    <li><a href="#">Request for Quotation</a></li>
+                    <li><a href="#">Membership program</a></li>
+                    <li><a href="#">Alibaba.com Logistics</a></li>
+                    <li><a href="#">Sales tax and VAT</a></li>
+                    <li><a href="#">Alibaba.com Reads</a></li>
+                </ul>
+            </div>
+
+            <!-- Sell on Alibaba.com -->
+            <div>
+                <h3>Sell on Alibaba.com</h3>
+                <ul>
+                    <li><a href="#">Start selling</a></li>
+                    <li><a href="#">Seller Central</a></li>
+                    <li><a href="#">Become a Verified Supplier</a></li>
+                    <li><a href="#">Partnerships</a></li>
+                    <li><a href="#">Download the app for suppliers</a></li>
+                </ul>
+            </div>
+
+            <!-- Get to Know Us -->
+            <div>
+                <h3>Get to know us</h3>
+                <ul>
+                    <li><a href="#">About Alibaba.com</a></li>
+                    <li><a href="#">Corporate responsibility</a></li>
+                    <li><a href="#">News center</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Social Icons -->
+        <div class="social-icons">
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
